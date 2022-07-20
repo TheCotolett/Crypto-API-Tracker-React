@@ -1,0 +1,60 @@
+.red {
+  color: #ff0000;
+}
+
+.green {
+  color: #00ff00;
+}
+
+.coin-card {
+  width: 14rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px;
+  background-color: #323840;
+  border-radius: 12px;
+}
+.coin-card .upper-part {
+  padding: 0px 15px 0px 15px;
+  height: 75%;
+  max-height: 7rem;
+  min-height: 7rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.coin-card .bottom-part {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-top: 2px solid rgba(40, 40, 40, 0.7960784314);
+}
+.coin-card .coin-img {
+  height: 50px;
+  margin: 0px 10px 0px 0px;
+}
+.coin-card .coin-name, .coin-card .coin-p {
+  color: rgb(235, 235, 235);
+}
+
+@media (max-width: 500px) {
+  .coin-card {
+    width: 8rem;
+  }
+  .coin-card .upper-part {
+    max-height: 3rem;
+    min-height: 3rem;
+    padding: 0px 5px 0px 5px;
+  }
+  .coin-card .upper-part .coin-img {
+    height: 30px;
+  }
+  .coin-card .upper-part .coin-name {
+    font-size: 13px;
+  }
+  .coin-card .coin-p, .coin-card .red, .coin-card .green {
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=Coin.css.map */
